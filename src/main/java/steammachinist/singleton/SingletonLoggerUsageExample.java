@@ -7,7 +7,12 @@ public class SingletonLoggerUsageExample {
         Thread threadA = new Thread(new LogUserA());
         Thread threadB = new Thread(new LogUserB());
         threadA.start();
-        threadB.start();;
+        threadB.start();
+        try {
+            threadA.join();
+            threadB.join();
+        } catch (InterruptedException ignored) {}
+        System.out.flush();
     }
 
     public static class LogUserA implements Runnable {
