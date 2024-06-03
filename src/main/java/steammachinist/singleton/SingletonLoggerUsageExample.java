@@ -16,6 +16,7 @@ public class SingletonLoggerUsageExample {
     }
 
     public static class LogUserA implements Runnable {
+
         @Override
         public void run() {
             var logger = Logger.getInstance();
@@ -25,6 +26,7 @@ public class SingletonLoggerUsageExample {
     }
 
     public static class LogUserB implements Runnable {
+
         @Override
         public void run() {
             var logger = Logger.getInstance();

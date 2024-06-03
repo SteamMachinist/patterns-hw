@@ -1,6 +1,7 @@
 package main.java.steammachinist.adapter;
 
 public class AdapterUsageExample {
+
     public static void run() {
         System.out.println("\n\nAdapter usage example:");
         Computer computer = new Computer();

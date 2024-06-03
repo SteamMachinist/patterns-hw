@@ -1,6 +1,7 @@
 package main.java.steammachinist.factory;
 
 public class CoffeeMachine {
+
     private final CoffeeFactory coffeeFactory;
 
     public CoffeeMachine(CoffeeFactory coffeeFactory) {
